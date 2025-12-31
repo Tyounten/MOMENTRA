@@ -9,8 +9,6 @@ const isAuthenticated = async (req,res,next)=>{
             });
         }
 
-        console.log("JWT_SECRET is:", process.env.JWT_SECRET);
-
         const decode = jwt.verify(token, process.env.JWT_SECRET);
         if(!decode){
             return res.status(401).json({
