@@ -19,7 +19,7 @@ const CommentDialog = ({ open, setOpen }) => {
   useEffect(() => {
     const fetchComments = async () => {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/post/${selectedPost._id}/comment/all`,
+        `https://momentra-6dzv.onrender.com/api/v1/post/${selectedPost._id}/comment/all`,
         { withCredentials: true }
       );
       if (res.data.success) setComment(res.data.comments);
@@ -41,7 +41,7 @@ const CommentDialog = ({ open, setOpen }) => {
   const sendMessageHandler = async () => {
 
     try {
-      const res = await axios.post(`http://localhost:8000/api/v1/post/${selectedPost?._id}/comment`, { text }, {
+      const res = await axios.post(`https://momentra-6dzv.onrender.com/api/v1/post/${selectedPost?._id}/comment`, { text }, {
         headers: {
           'Content-Type': 'application/json'
         },

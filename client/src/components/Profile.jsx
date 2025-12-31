@@ -51,7 +51,7 @@ const Profile = () => {
       applyLocalFollowPatch(isFollowing ? 'unfollowed' : 'followed');
 
       const { data } = await axios.post(
-        `http://localhost:8000/api/v1/user/followorunfollow/${userProfile._id}`,
+        `https://momentra-6dzv.onrender.com/api/v1/user/followorunfollow/${userProfile._id}`,
         {},
         { withCredentials: true }
       );

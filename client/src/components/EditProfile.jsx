@@ -42,7 +42,7 @@ const EditProfile = () => {
         }
         try {
             setLoading(true);
-            const res = await axios.post('http://localhost:8000/api/v1/user/profile/edit', formData,{
+            const res = await axios.post('https://momentra-6dzv.onrender.com/api/v1/user/profile/edit', formData,{
                 withCredentials:true
             });
             if(res.data.success){

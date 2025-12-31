@@ -4,7 +4,7 @@ let socket = null;
 
 export function initSocket(userId) {
   if (!socket) {
-    socket = io('http://localhost:8000', {
+    socket = io('https://momentra-6dzv.onrender.com', {
       transports: ['websocket'],
       query: { userId },
       withCredentials: true, // enable if your backend uses cookie auth
