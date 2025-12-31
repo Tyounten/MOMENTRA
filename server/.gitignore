@@ -1,0 +1,30 @@
+# Node module
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnmp-debug.log*
+
+# Runtime data
+
+# Environment variables
+.env
+.env.test
+.env.*.local
+
+# Optional npm cache directory
+.npm/
+
+# Debug files
+.vscode/
+
+# Build output
+dist/
+build/
+
+# MongoDB dumps
+dump/
